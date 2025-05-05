@@ -15,7 +15,7 @@
     flex-direction: column;
 }
   body {
-    background: url('images/Beach\ pic.jpeg') no-repeat center center fixed;
+    background: url('build/Beach pic.jpeg') no-repeat center center fixed;
     background-size: cover;
     backdrop-filter: blur(2px);
     position: relative;
