@@ -1,33 +1,25 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
   html, body {
-    height: 100%; /* Full height of the screen */
+    height: 100%; 
     margin: 0;
     display: flex;
     flex-direction: column;
 }
-
 .wrapper {
-    flex: 1; /* This ensures the content takes up all available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
-
-  
-  /* Background with blur overlay */
   body {
-    background: url('/Beach pic.jpeg') no-repeat center center fixed;
+    background: url('images/Beach\ pic.jpeg') no-repeat center center fixed;
     background-size: cover;
     backdrop-filter: blur(2px);
     position: relative;
   }
-  
-  /* Dark overlay */
   body::before {
     content: "";
     position: fixed;
@@ -46,12 +38,9 @@
     width: 100%;
     height: 100%;
     background: rgb(35, 33, 33);
-    opacity: 0.4; /* Adjust this value: lower = more transparent */
+    opacity: 0.4; 
     z-index: -1;
   }
-  
-  
-  /* Header */
   header {
     background: linear-gradient(to right, #4b6cb7, #182848);
     color: white;
@@ -61,7 +50,7 @@
   
   nav {
     display: flex;
-    justify-content: flex-end;  /* Align nav links to the right side */
+    justify-content: flex-end; 
     align-items: center;
     padding: 0 2rem;
     width: 100%;
@@ -88,8 +77,6 @@
   .nav-links a:hover {
     color: #ffd700;
   }
-  
-  /* Hero Section */
   .hero {
     margin-top: 2rem;
     padding: 2rem;
@@ -106,8 +93,6 @@
   .hero span {
     color: #ffd700;
   }
-  
-  /* Buttons */
   .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -124,8 +109,6 @@
     background: #e6c200;
     transform: scale(1.05);
   }
-  
-  /* Section Layout */
   .section {
     padding: 4rem 2rem;
     text-align: center;
@@ -141,8 +124,6 @@
     margin-bottom: 2rem;
     font-size: 1.1rem;
   }
-  
-  /* Projects */
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -165,8 +146,6 @@
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
-  
-  /* Contact Form */
   .contact-section form {
     max-width: 500px;
     margin: 2rem auto;
@@ -196,8 +175,6 @@
   .contact-section button:hover {
     background: #3a529c;
   }
-  
-  /* About Section */
   .about-section {
     position: relative;
     background: url('about-bg.jpg') center/cover no-repeat;
@@ -215,8 +192,6 @@
     max-width: 700px;
     text-align: center;
   }
-  
-  /* Footer */
   footer {
     background: #222;
     color: #ccc;
@@ -241,8 +216,6 @@
 .social-links a:hover {
     text-decoration: underline;
 }
-  
-  /* Responsive Design */
   @media screen and (max-width: 768px) {
     .hero h2 {
       font-size: 2rem;
